@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3388a93740.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/book-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href=".style/style.css">
+    <title>Dictionary</title>
+</head>
+
+
+<body>
+
+    <main id="mainContainer" class="container">
+        
+        <nav id="nav" class="mb-5 navbar navbar-expand border-bottom border-bottom-dark">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-book fs-1"></i>
+                </a>
+            
+                <div>
+                    <ul class="navbar-nav align-items-center fw-semibold flex-row">
+                        <li class="nav-item dropdown">
+                            <button id="currentFont" class="dropdown-toggle nav-link fw-semibold" role="button" data-bs-toggle="dropdown">Arial</button>
+                            <ul id="font-change" class="dropdown-menu">
+                                <li class="dropdown-item fw-semibold fontChosen">serif</li>
+                                <li class="dropdown-item fw-semibold fontChosen">sans-serif</li>
+                                <li class="dropdown-item fw-semibold fontChosen">Times New Roman</li>
+                                <li class="dropdown-item fw-semibold fontChosen">Verdana</li>
+                                <li class="dropdown-item fw-semibold fontChosen">monospace</li>
+                                <li class="dropdown-item fw-semibold fontChosen">Franklin Gothic</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="d-flex gap-2 align-items-center">
+                                <button class="display-5 border-0 bg-transparent">
+                                    <i id="ntrMode" class="bi bi-toggle-off text-black"></i>
+                                </button>
+                                <i id="moon" class="bi bi bi-sun"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>                        
+        </nav>
+        <div>
+            <p id="error" class="d-none text-danger ms-lg-5 fw-semibold">Sorry, the word you're looking for was not found</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="input-group mb-5 w-100 mx-lg-5">
+                <input class="fw-semibold form-control border-success" type="text" value="search..." name="searchWord" id="wordSearch" aria-describedby="button-addon2">
+
+                  
+                  
+                <button id="btnSearch" class="p-1 px-3 btn btn btn-outline-success" type="button">
+                    English - US &nbsp
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+
+    </main> 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+
+    <script src="./script/script.js"></script>
+    <script src="./script/dictionary.js"></script>
+     <script src="./script/infos.js"></script> 
+</body>
+</html>

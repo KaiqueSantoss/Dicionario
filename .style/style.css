@@ -1,0 +1,9 @@
+
+
+:root, [data-bs-theme=light] {
+    --bs-bg-primary: rgb(98, 0, 255);
+    --bs-primary: #6200ff;
+}
+.textCustom{
+    /* color: white; */
+}
